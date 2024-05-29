@@ -1,0 +1,180 @@
+/* supplier.css */
+.supplier-details-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.suppliers-list {
+  flex: 1;
+  max-width: 250px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.suppliers-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.suppliers-list li {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s;
+}
+
+.suppliers-list li:hover {
+  background-color: #f5f5f5;
+}
+
+.suppliers-list li.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.suppliers-list .add-supplier {
+  color: blue;
+  cursor: pointer;
+  border-bottom: none;
+}
+
+.details-section {
+  flex: 2;
+  min-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.details-section h2 {
+  margin-bottom: 20px;
+}
+
+.details-section p {
+  margin: 10px 0;
+}
+
+/* Search Box */
+.search-box {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.save-button, .edit-details, .delete-button, .cancel-button {
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+.save-button {
+  background-color: green;
+}
+
+.save-button:hover {
+  background-color: darkgreen;
+}
+
+.edit-details {
+  background-color: orange;
+}
+
+.edit-details:hover {
+  background-color: darkorange;
+}
+
+.delete-button {
+  background-color: red;
+}
+
+.delete-button:hover {
+  background-color: darkred;
+}
+
+.cancel-button {
+  background-color: gray;
+}
+
+.cancel-button:hover {
+  background-color: darkgray;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .supplier-details-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .suppliers-list, .details-section {
+    min-width: auto;
+  }
+}
+
+.supplier-details-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.supplier-details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.supplier-details-body {
+  display: flex;
+  gap: 20px;
+}
+
+.supplier-details-column {
+  flex: 1;
+}
+
+.supplier-details-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.supplier-details-item i {
+  margin-right: 10px;
+  color: #007bff;
+}
+.supplier-details-label {
+  font-weight: bold;
+  margin-right: 5px;
+  color: #555;
+}
